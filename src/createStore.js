@@ -30,16 +30,8 @@ const defaultJson = {
     ],
     "bicycle": {
       "color": "red",
-      "price": 19.95,
-      "sold": false,
-      "notSold": true,
-      "null": null
-    },
-    "array": [
-      ["other", ["yet another", "one"]],
-      "scalar",
-      [{"foo": "bar"}, "zoo"]
-    ]
+      "price": 19.95
+    }
   }
 };
 
