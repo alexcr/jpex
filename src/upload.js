@@ -8,11 +8,13 @@ export function useUpload(onUpload) {
     onDropAccepted: async ([file]) => {
       const reader = new FileReader();
       reader.onload = () => {
+        let json = null;
         try {
-          onUpload(JSON.parse(reader.result));
+          json = JSON.parse(reader.result);
         } catch(e) {
-          onUpload(null);
+          // do nothing
         }
+        onUpload(json);
       };
       reader.readAsText(file);
     },

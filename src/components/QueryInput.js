@@ -35,7 +35,7 @@ export const QueryInput = observer(() => {
       value={store.query}
       onChange={e => store.setQuery(e.target.value)}
       placeholder="Query JSONPath..."
-      disabled={store.json === null}
+      disabled={store.invalidJson}
     />
   );
 });

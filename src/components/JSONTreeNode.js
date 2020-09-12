@@ -1,6 +1,6 @@
 import React from 'react';
 import { observer } from 'mobx-react-lite';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { ExpandButton } from './ExpandButton';
 import { useStore } from '../store';
 
@@ -11,20 +11,14 @@ const NodeContainer = styled.div`
   text-overflow: ellipsis;
   white-space: nowrap;
   margin-left: ${props => props.depth * 30}px;
-
-  ${props => props.isMatch && css`
-    & span {
-      color: #ff6b02;
-    }
-  `}
 `;
 
 const KeySpan = styled.span`
-  color: #999;
+  color: ${props => props.isMatched ? '#ffa96c' : '#999'};
 `;
 
 const ValueSpan = styled.span`
-  color: #000;
+  color: ${props => props.isMatched ? '#ff6b02' : '#000'};
 `;
 
 export const JSONTreeNode = observer(({
@@ -32,29 +26,27 @@ export const JSONTreeNode = observer(({
   style,
 }) => {
   const store = useStore();
-  const node = store.nodeList[index];
+  const node = store.visibleNodeList[index];
+  const isCollapsed = store.isNodeCollapsed(node);
+  const isMatched = store.isNodeMatched(node);
   return (
-    <NodeContainer
-      depth={node.depth}
-      isMatch={node.isMatch}
-      style={style}
-    >
+    <NodeContainer depth={node.depth} style={style}>
       {
-        node.isExpandable &&
+        !node.isScalar &&
         <ExpandButton
-          isExpanded={!node.isCollapsed}
+          isExpanded={!isCollapsed}
           isArray={node.isArray}
-          onToggle={() => {
-            store.collapsedNodes[node.rowNumber] = !store.collapsedNodes[node.rowNumber];
-          }}
+          onToggle={() => (
+            isCollapsed ? store.expandNode(node.nodeIndex) : store.collapseNode(node.nodeIndex)
+          )}
         />
       }
-      <KeySpan>
+      <KeySpan isMatched={isMatched}>
         {!node.isArrayItem && node.key + ': '}
       </KeySpan>
-      <ValueSpan>
+      <ValueSpan isMatched={isMatched}>
         {node.isScalar && String(node.value)}
-        {!node.isScalar && node.isCollapsed && node.getPreview()}
+        {!node.isScalar && isCollapsed && store.getNodePreview(node)}
       </ValueSpan>
     </NodeContainer>
   );

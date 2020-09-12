@@ -23,17 +23,16 @@ const StyledList = styled(List)`
 
 export const JSONTreeViewer = observer(() => {
   const store = useStore();
-  const nodeList = store.nodeList;
-  const hasError = store.json === null;
+  const nodeList = store.visibleNodeList;
   return (
     <>
-      {hasError && 'Invalid JSON file'}
+      {store.invalidJson && 'Invalid JSON file'}
       <StyledList
-        height={hasError ? 366 : 380}
+        height={store.invalidJson ? 366 : 380}
         itemCount={nodeList.length}
         itemSize={25}
-        className={hasError ? 'error' : ''}
-        itemKey={index => nodeList[index].id}
+        className={store.invalidJson ? 'error' : ''}
+        itemKey={index => nodeList[index].nodeId}
       >
         {
           ({index, style}) => (
