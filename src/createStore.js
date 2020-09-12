@@ -64,9 +64,11 @@ function parseJson(json) {
     const isArray = Array.isArray(value);
     const isScalar = !isArray && !isObject;
     const isArrayItem = parent && parent.isArray;
+    const children = [];
 
     const listNode = {
-      nodeIndex, nodeId, key, value, depth, parent, isScalar, isArray, isObject, isArrayItem
+      nodeIndex, nodeId, key, value, depth, parent, children,
+      isScalar, isArray, isObject, isArrayItem
     };
 
     parsedJson.nodeList.push(listNode);
@@ -101,6 +103,10 @@ function parseJson(json) {
       const nextPath = [...path, key];
       const listNode = addListNode(key, value, parent, path);
       addNodePath(nextPath, listNode.nodeIndex);
+
+      if (parent) {
+        parent.children.push(listNode);
+      }
 
       if (listNode.isArray || listNode.isObject) {
         parseNode(value, nextPath, listNode);
@@ -148,17 +154,11 @@ export function createStore() {
     /* Helpers */
 
     isNodeCollapsed(node) {
-      return (
-        this.collapsedNodes.has(node.nodeIndex) ||
-        (!node.parent ? false : this.isNodeCollapsed(node.parent))
-      );
+      return this.collapsedNodes.has(node.nodeIndex);
     },
 
     isNodeMatched(node) {
-      return (
-        this.matchedNodes.has(node.nodeIndex) ||
-        (!node.parent ? false : this.isNodeMatched(node.parent))
-      );
+      return this.matchedNodes.has(node.nodeIndex);
     },
 
     getNodePreview(node) {
@@ -173,6 +173,8 @@ export function createStore() {
       this.json = json;
       this.invalidJson = json === null;
       this.collapsedNodes.clear();
+      this.matchedNodes.clear();
+      this.invalidQuery = false;
       this.query = '';
     },
 
@@ -198,17 +200,24 @@ export function createStore() {
           // Now add the found node index to the matchedNodes set.
           // We expect all paths found by jsonpath to exist in the pathMap,
           // so we don't need to check if (mappedPath !== undefined) here.
-          this.matchedNodes.add(mappedPath.nodeIndex);
+          this.matchNode(this.nodeList[mappedPath.nodeIndex]);
         })
       }
     },
 
-    collapseNode(nodeIndex) {
-      this.collapsedNodes.add(nodeIndex);
+    matchNode(node) {
+      this.matchedNodes.add(node.nodeIndex);
+      node.children.forEach(this.matchNode);
     },
 
-    expandNode(nodeIndex) {
-      this.collapsedNodes.delete(nodeIndex);
+    collapseNode(node) {
+      this.collapsedNodes.add(node.nodeIndex);
+      node.children.forEach(this.collapseNode);
+    },
+
+    expandNode(node) {
+      this.collapsedNodes.delete(node.nodeIndex);
+      node.children.forEach(this.expandNode);
     },
   });
 }

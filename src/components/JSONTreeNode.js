@@ -37,7 +37,7 @@ export const JSONTreeNode = observer(({
           isExpanded={!isCollapsed}
           isArray={node.isArray}
           onToggle={() => (
-            isCollapsed ? store.expandNode(node.nodeIndex) : store.collapseNode(node.nodeIndex)
+            isCollapsed ? store.expandNode(node) : store.collapseNode(node)
           )}
         />
       }
