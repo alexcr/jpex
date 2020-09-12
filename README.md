@@ -8,7 +8,9 @@ The app is live at: [jpex.cloud](https://jpex.cloud/)
 
 ## Strategy
 
-JPEX was built to support huge JSON files. Since rendering is the most expensive operation for a component that can draw a tree with thousands of nodes, this app uses **virtualized lists** to render only the nodes that are currently on screen. To achieve that, the JSON object is first parsed and converted to a flat list of nodes. Each list node contains enough information to allow the components to render them as a tree, including depth and collapsible state.
+JPEX was built to support huge JSON files. Since rendering is the most expensive operation for a component that can draw a tree with thousands of nodes, this app uses **virtualized lists** to render only the nodes that are currently on screen. To achieve that, the JSON object is first parsed and converted to a flat list of nodes. Each list node contains enough information to allow the components to render them as a tree, including depth and collapsible state. It also stores an object that maps each path to its node index in the list, so as to reduce computation time when parsing huge JSON objects.
+
+This app was tested with JSON files with 50k objects (around 70MB of data).
 
 ## Stack
 
@@ -34,6 +36,12 @@ $ npm install
 # Then run the web server:
 $ npm run start
 ```
+
+## What's next?
+
+Some steps can be taken to further improve performance and UX:
+* Show loading indicator while parsing new JSON files
+* Use Web Workers to run expensive operations in the background
 
 ## Links for external documentation
 
