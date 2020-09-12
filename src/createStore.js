@@ -60,15 +60,14 @@ function parseJson(json) {
     const nodeIndex = parsedJson.nodeList.length;
     const nodeId = `${jsonId}-${nodeIndex}`;
     const depth = path.length - 1;
-    const isObject = value !== null && typeof value === 'object';
+    const isScalar = typeof value !== 'object' || value === null;
     const isArray = Array.isArray(value);
-    const isScalar = !isArray && !isObject;
     const isArrayItem = parent && parent.isArray;
     const children = [];
 
     const listNode = {
       nodeIndex, nodeId, key, value, depth, parent, children,
-      isScalar, isArray, isObject, isArrayItem
+      isScalar, isArray, isArrayItem
     };
 
     parsedJson.nodeList.push(listNode);
@@ -108,7 +107,7 @@ function parseJson(json) {
         parent.children.push(listNode);
       }
 
-      if (listNode.isArray || listNode.isObject) {
+      if (!listNode.isScalar) {
         parseNode(value, nextPath, listNode);
       }
     })
@@ -122,6 +121,7 @@ export function createStore() {
   return observable.object({
     /* State */
 
+    json: {},
     invalidJson: false,
     invalidQuery: false,
     query: '',
