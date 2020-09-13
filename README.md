@@ -7,7 +7,7 @@ JPEX (JSONPath Explorer) is a web application that allows users to query a JSON 
 
 ## Demo
 
-The app is live at: [jpex.cloud](https://jpex.cloud/)
+The app is live at [jpex.cloud](https://jpex.cloud/) (hosted by AWS).
 
 ## Strategy
 
@@ -19,9 +19,11 @@ This app was tested with JSON files with 50k objects (around 70MB of data).
 
 ### Main technologies
 
-* **React** to render the web app.
+* **React** to render the web app, created with **create-react-app**
 * **mobx** as state manager and **mobx-react-lite** to integrate it with React
 * **styled-components** to style components using Javascript
+* **jest** and **enzyme** for unit tests and snapshot tests
+* **TravisCI** for continuous integration
 
 ### Other libraries
 
@@ -36,8 +38,11 @@ This app was tested with JSON files with 50k objects (around 70MB of data).
 # Install using npm:
 $ npm install
 
-# Then run the web server:
-$ npm run start
+# Run the web server:
+$ npm start
+
+# Run the tests:
+$ npm test
 ```
 
 ## What's next?
