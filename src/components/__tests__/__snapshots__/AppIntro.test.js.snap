@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppIntro should render intro paragraph correctly 1`] = `
+Array [
+  <input
+    accept="application/json"
+    autocomplete="off"
+    style="display:none"
+    tabindex="-1"
+    type="file"
+  />,
+  <p>
+    Drag a JSON file to the area below or 
+    <span
+      class="sc-bdnylx WjWW"
+    >
+      { click here }
+    </span>
+     to select one.
+  </p>,
+]
+`;

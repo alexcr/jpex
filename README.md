@@ -1,6 +1,7 @@
-[![Build Status](https://travis-ci.com/alexcr/jpex.svg?token=nq2T7qKyBHDEmZjPe4Cj&branch=master)](https://travis-ci.com/alexcr/jpex)
+jpex
+====
 
-# jpex
+[![Build Status](https://travis-ci.com/alexcr/jpex.svg?token=nq2T7qKyBHDEmZjPe4Cj&branch=master)](https://travis-ci.com/alexcr/jpex)
 
 JPEX (JSONPath Explorer) is a web application that allows users to query a JSON object using JSONPath with an instant and beautiful visualization.
 

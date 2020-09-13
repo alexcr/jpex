@@ -1,7 +1,7 @@
 import { isObservable } from 'mobx';
 import { createStore } from '../createStore';
 
-const testJson = {
+export const testJson = {
   cities: [
     {
       city: 'São Paulo',
@@ -24,7 +24,7 @@ const testJson = {
   typeTest: [1.2, true, false, null, {}, []],
 };
 
-const expectedNodeList = [
+export const expectedNodeList = [
   // $
   {
     nodeIndex: 0, nodeId: /^\d+-0$/, depth: -1,
@@ -144,7 +144,7 @@ const expectedNodeList = [
   },
 ];
 
-const expectedPathMap = {
+export const expectedPathMap = {
   '$': [{path: ['$'], nodeIndex: 0}],
   '$>cities': [{path: ['$', 'cities'], nodeIndex: 1}],
   '$>cities>0': [{path: ['$', 'cities', 0], nodeIndex: 2}],

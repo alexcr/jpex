@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppFooter should render footer correctly 1`] = `
+<styled.footer>
+  © 2020 Alexandre Rondon
+</styled.footer>
+`;

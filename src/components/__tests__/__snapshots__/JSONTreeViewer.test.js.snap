@@ -1,0 +1,292 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JSONTreeViewer should render the tree viewer correctly 1`] = `
+<div
+  class="sc-eCApGN kIhJZd"
+  style="position:relative;height:380px;overflow:auto;-webkit-overflow-scrolling:touch;will-change:transform;direction:ltr"
+>
+  <div
+    style="height:525px;width:100%"
+  >
+    <div
+      class="sc-gtssRu hFIiXf"
+      style="position:absolute;left:0;top:0;height:25px;width:100%"
+    >
+      <div
+        class="sc-bdnylx dnStey"
+      >
+        [-]
+      </div>
+      <span
+        class="sc-dlnjPT jLMhUk"
+      >
+        cities: 
+      </span>
+      <span
+        class="sc-hKFyIo jhwTzf"
+      />
+    </div>
+    <div
+      class="sc-gtssRu bwPoAN"
+      style="position:absolute;left:0;top:25px;height:25px;width:100%"
+    >
+      <div
+        class="sc-bdnylx dnStey"
+      >
+        {-}
+      </div>
+      <span
+        class="sc-dlnjPT jLMhUk"
+      />
+      <span
+        class="sc-hKFyIo jhwTzf"
+      />
+    </div>
+    <div
+      class="sc-gtssRu JttRD"
+      style="position:absolute;left:0;top:50px;height:25px;width:100%"
+    >
+      <span
+        class="sc-dlnjPT jLMhUk"
+      >
+        city: 
+      </span>
+      <span
+        class="sc-hKFyIo jhwTzf"
+      >
+        São Paulo
+      </span>
+    </div>
+    <div
+      class="sc-gtssRu JttRD"
+      style="position:absolute;left:0;top:75px;height:25px;width:100%"
+    >
+      <span
+        class="sc-dlnjPT jLMhUk"
+      >
+        country: 
+      </span>
+      <span
+        class="sc-hKFyIo jhwTzf"
+      >
+        Brazil
+      </span>
+    </div>
+    <div
+      class="sc-gtssRu bwPoAN"
+      style="position:absolute;left:0;top:100px;height:25px;width:100%"
+    >
+      <div
+        class="sc-bdnylx dnStey"
+      >
+        {-}
+      </div>
+      <span
+        class="sc-dlnjPT jLMhUk"
+      />
+      <span
+        class="sc-hKFyIo jhwTzf"
+      />
+    </div>
+    <div
+      class="sc-gtssRu JttRD"
+      style="position:absolute;left:0;top:125px;height:25px;width:100%"
+    >
+      <span
+        class="sc-dlnjPT jLMhUk"
+      >
+        city: 
+      </span>
+      <span
+        class="sc-hKFyIo jhwTzf"
+      >
+        London
+      </span>
+    </div>
+    <div
+      class="sc-gtssRu JttRD"
+      style="position:absolute;left:0;top:150px;height:25px;width:100%"
+    >
+      <span
+        class="sc-dlnjPT jLMhUk"
+      >
+        country: 
+      </span>
+      <span
+        class="sc-hKFyIo jhwTzf"
+      >
+        United Kingdom
+      </span>
+    </div>
+    <div
+      class="sc-gtssRu bwPoAN"
+      style="position:absolute;left:0;top:175px;height:25px;width:100%"
+    >
+      <div
+        class="sc-bdnylx dnStey"
+      >
+        {-}
+      </div>
+      <span
+        class="sc-dlnjPT jLMhUk"
+      />
+      <span
+        class="sc-hKFyIo jhwTzf"
+      />
+    </div>
+    <div
+      class="sc-gtssRu JttRD"
+      style="position:absolute;left:0;top:200px;height:25px;width:100%"
+    >
+      <span
+        class="sc-dlnjPT jLMhUk"
+      >
+        city: 
+      </span>
+      <span
+        class="sc-hKFyIo jhwTzf"
+      >
+        Krakow
+      </span>
+    </div>
+    <div
+      class="sc-gtssRu JttRD"
+      style="position:absolute;left:0;top:225px;height:25px;width:100%"
+    >
+      <span
+        class="sc-dlnjPT jLMhUk"
+      >
+        country: 
+      </span>
+      <span
+        class="sc-hKFyIo jhwTzf"
+      >
+        Poland
+      </span>
+    </div>
+    <div
+      class="sc-gtssRu hFIiXf"
+      style="position:absolute;left:0;top:250px;height:25px;width:100%"
+    >
+      <div
+        class="sc-bdnylx dnStey"
+      >
+        {-}
+      </div>
+      <span
+        class="sc-dlnjPT jLMhUk"
+      >
+        duplicatePathTest: 
+      </span>
+      <span
+        class="sc-hKFyIo jhwTzf"
+      />
+    </div>
+    <div
+      class="sc-gtssRu bwPoAN"
+      style="position:absolute;left:0;top:275px;height:25px;width:100%"
+    >
+      <div
+        class="sc-bdnylx dnStey"
+      >
+        {-}
+      </div>
+      <span
+        class="sc-dlnjPT jLMhUk"
+      >
+        a: 
+      </span>
+      <span
+        class="sc-hKFyIo jhwTzf"
+      />
+    </div>
+    <div
+      class="sc-gtssRu JttRD"
+      style="position:absolute;left:0;top:300px;height:25px;width:100%"
+    >
+      <span
+        class="sc-dlnjPT jLMhUk"
+      >
+        b: 
+      </span>
+      <span
+        class="sc-hKFyIo jhwTzf"
+      >
+        first path a&gt;b
+      </span>
+    </div>
+    <div
+      class="sc-gtssRu bwPoAN"
+      style="position:absolute;left:0;top:325px;height:25px;width:100%"
+    >
+      <span
+        class="sc-dlnjPT jLMhUk"
+      >
+        a&gt;b: 
+      </span>
+      <span
+        class="sc-hKFyIo jhwTzf"
+      >
+        second path a&gt;b
+      </span>
+    </div>
+    <div
+      class="sc-gtssRu hFIiXf"
+      style="position:absolute;left:0;top:350px;height:25px;width:100%"
+    >
+      <div
+        class="sc-bdnylx dnStey"
+      >
+        [-]
+      </div>
+      <span
+        class="sc-dlnjPT jLMhUk"
+      >
+        typeTest: 
+      </span>
+      <span
+        class="sc-hKFyIo jhwTzf"
+      />
+    </div>
+    <div
+      class="sc-gtssRu bwPoAN"
+      style="position:absolute;left:0;top:375px;height:25px;width:100%"
+    >
+      <span
+        class="sc-dlnjPT jLMhUk"
+      />
+      <span
+        class="sc-hKFyIo jhwTzf"
+      >
+        1.2
+      </span>
+    </div>
+    <div
+      class="sc-gtssRu bwPoAN"
+      style="position:absolute;left:0;top:400px;height:25px;width:100%"
+    >
+      <span
+        class="sc-dlnjPT jLMhUk"
+      />
+      <span
+        class="sc-hKFyIo jhwTzf"
+      >
+        true
+      </span>
+    </div>
+    <div
+      class="sc-gtssRu bwPoAN"
+      style="position:absolute;left:0;top:425px;height:25px;width:100%"
+    >
+      <span
+        class="sc-dlnjPT jLMhUk"
+      />
+      <span
+        class="sc-hKFyIo jhwTzf"
+      >
+        false
+      </span>
+    </div>
+  </div>
+</div>
+`;

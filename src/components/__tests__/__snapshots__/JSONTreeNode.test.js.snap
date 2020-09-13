@@ -1,0 +1,388 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JSONTreeNode should render a node correctly 1`] = `
+<div
+  class="sc-gtssRu hFIiXf"
+  style="height:25px"
+>
+  <div
+    class="sc-bdnylx dnStey"
+  >
+    [-]
+  </div>
+  <span
+    class="sc-dlnjPT jLMhUk"
+  >
+    cities: 
+  </span>
+  <span
+    class="sc-hKFyIo jhwTzf"
+  />
+</div>
+`;
+
+exports[`JSONTreeNode should render a node correctly 2`] = `
+<div
+  class="sc-gtssRu bwPoAN"
+  style="height:25px"
+>
+  <div
+    class="sc-bdnylx dnStey"
+  >
+    {-}
+  </div>
+  <span
+    class="sc-dlnjPT jLMhUk"
+  />
+  <span
+    class="sc-hKFyIo jhwTzf"
+  />
+</div>
+`;
+
+exports[`JSONTreeNode should render a node correctly 3`] = `
+<div
+  class="sc-gtssRu JttRD"
+  style="height:25px"
+>
+  <span
+    class="sc-dlnjPT jLMhUk"
+  >
+    city: 
+  </span>
+  <span
+    class="sc-hKFyIo jhwTzf"
+  >
+    São Paulo
+  </span>
+</div>
+`;
+
+exports[`JSONTreeNode should render a node correctly 4`] = `
+<div
+  class="sc-gtssRu JttRD"
+  style="height:25px"
+>
+  <span
+    class="sc-dlnjPT jLMhUk"
+  >
+    country: 
+  </span>
+  <span
+    class="sc-hKFyIo jhwTzf"
+  >
+    Brazil
+  </span>
+</div>
+`;
+
+exports[`JSONTreeNode should render a node correctly 5`] = `
+<div
+  class="sc-gtssRu bwPoAN"
+  style="height:25px"
+>
+  <div
+    class="sc-bdnylx dnStey"
+  >
+    {-}
+  </div>
+  <span
+    class="sc-dlnjPT jLMhUk"
+  />
+  <span
+    class="sc-hKFyIo jhwTzf"
+  />
+</div>
+`;
+
+exports[`JSONTreeNode should render a node correctly 6`] = `
+<div
+  class="sc-gtssRu JttRD"
+  style="height:25px"
+>
+  <span
+    class="sc-dlnjPT jLMhUk"
+  >
+    city: 
+  </span>
+  <span
+    class="sc-hKFyIo jhwTzf"
+  >
+    London
+  </span>
+</div>
+`;
+
+exports[`JSONTreeNode should render a node correctly 7`] = `
+<div
+  class="sc-gtssRu JttRD"
+  style="height:25px"
+>
+  <span
+    class="sc-dlnjPT jLMhUk"
+  >
+    country: 
+  </span>
+  <span
+    class="sc-hKFyIo jhwTzf"
+  >
+    United Kingdom
+  </span>
+</div>
+`;
+
+exports[`JSONTreeNode should render a node correctly 8`] = `
+<div
+  class="sc-gtssRu bwPoAN"
+  style="height:25px"
+>
+  <div
+    class="sc-bdnylx dnStey"
+  >
+    {-}
+  </div>
+  <span
+    class="sc-dlnjPT jLMhUk"
+  />
+  <span
+    class="sc-hKFyIo jhwTzf"
+  />
+</div>
+`;
+
+exports[`JSONTreeNode should render a node correctly 9`] = `
+<div
+  class="sc-gtssRu JttRD"
+  style="height:25px"
+>
+  <span
+    class="sc-dlnjPT jLMhUk"
+  >
+    city: 
+  </span>
+  <span
+    class="sc-hKFyIo jhwTzf"
+  >
+    Krakow
+  </span>
+</div>
+`;
+
+exports[`JSONTreeNode should render a node correctly 10`] = `
+<div
+  class="sc-gtssRu JttRD"
+  style="height:25px"
+>
+  <span
+    class="sc-dlnjPT jLMhUk"
+  >
+    country: 
+  </span>
+  <span
+    class="sc-hKFyIo jhwTzf"
+  >
+    Poland
+  </span>
+</div>
+`;
+
+exports[`JSONTreeNode should render a node correctly 11`] = `
+<div
+  class="sc-gtssRu hFIiXf"
+  style="height:25px"
+>
+  <div
+    class="sc-bdnylx dnStey"
+  >
+    {-}
+  </div>
+  <span
+    class="sc-dlnjPT jLMhUk"
+  >
+    duplicatePathTest: 
+  </span>
+  <span
+    class="sc-hKFyIo jhwTzf"
+  />
+</div>
+`;
+
+exports[`JSONTreeNode should render a node correctly 12`] = `
+<div
+  class="sc-gtssRu bwPoAN"
+  style="height:25px"
+>
+  <div
+    class="sc-bdnylx dnStey"
+  >
+    {-}
+  </div>
+  <span
+    class="sc-dlnjPT jLMhUk"
+  >
+    a: 
+  </span>
+  <span
+    class="sc-hKFyIo jhwTzf"
+  />
+</div>
+`;
+
+exports[`JSONTreeNode should render a node correctly 13`] = `
+<div
+  class="sc-gtssRu JttRD"
+  style="height:25px"
+>
+  <span
+    class="sc-dlnjPT jLMhUk"
+  >
+    b: 
+  </span>
+  <span
+    class="sc-hKFyIo jhwTzf"
+  >
+    first path a&gt;b
+  </span>
+</div>
+`;
+
+exports[`JSONTreeNode should render a node correctly 14`] = `
+<div
+  class="sc-gtssRu bwPoAN"
+  style="height:25px"
+>
+  <span
+    class="sc-dlnjPT jLMhUk"
+  >
+    a&gt;b: 
+  </span>
+  <span
+    class="sc-hKFyIo jhwTzf"
+  >
+    second path a&gt;b
+  </span>
+</div>
+`;
+
+exports[`JSONTreeNode should render a node correctly 15`] = `
+<div
+  class="sc-gtssRu hFIiXf"
+  style="height:25px"
+>
+  <div
+    class="sc-bdnylx dnStey"
+  >
+    [-]
+  </div>
+  <span
+    class="sc-dlnjPT jLMhUk"
+  >
+    typeTest: 
+  </span>
+  <span
+    class="sc-hKFyIo jhwTzf"
+  />
+</div>
+`;
+
+exports[`JSONTreeNode should render a node correctly 16`] = `
+<div
+  class="sc-gtssRu bwPoAN"
+  style="height:25px"
+>
+  <span
+    class="sc-dlnjPT jLMhUk"
+  />
+  <span
+    class="sc-hKFyIo jhwTzf"
+  >
+    1.2
+  </span>
+</div>
+`;
+
+exports[`JSONTreeNode should render a node correctly 17`] = `
+<div
+  class="sc-gtssRu bwPoAN"
+  style="height:25px"
+>
+  <span
+    class="sc-dlnjPT jLMhUk"
+  />
+  <span
+    class="sc-hKFyIo jhwTzf"
+  >
+    true
+  </span>
+</div>
+`;
+
+exports[`JSONTreeNode should render a node correctly 18`] = `
+<div
+  class="sc-gtssRu bwPoAN"
+  style="height:25px"
+>
+  <span
+    class="sc-dlnjPT jLMhUk"
+  />
+  <span
+    class="sc-hKFyIo jhwTzf"
+  >
+    false
+  </span>
+</div>
+`;
+
+exports[`JSONTreeNode should render a node correctly 19`] = `
+<div
+  class="sc-gtssRu bwPoAN"
+  style="height:25px"
+>
+  <span
+    class="sc-dlnjPT jLMhUk"
+  />
+  <span
+    class="sc-hKFyIo jhwTzf"
+  >
+    null
+  </span>
+</div>
+`;
+
+exports[`JSONTreeNode should render a node correctly 20`] = `
+<div
+  class="sc-gtssRu bwPoAN"
+  style="height:25px"
+>
+  <div
+    class="sc-bdnylx dnStey"
+  >
+    {-}
+  </div>
+  <span
+    class="sc-dlnjPT jLMhUk"
+  />
+  <span
+    class="sc-hKFyIo jhwTzf"
+  />
+</div>
+`;
+
+exports[`JSONTreeNode should render a node correctly 21`] = `
+<div
+  class="sc-gtssRu bwPoAN"
+  style="height:25px"
+>
+  <div
+    class="sc-bdnylx dnStey"
+  >
+    [-]
+  </div>
+  <span
+    class="sc-dlnjPT jLMhUk"
+  />
+  <span
+    class="sc-hKFyIo jhwTzf"
+  />
+</div>
+`;

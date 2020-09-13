@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QueryInput should render the query input correctly 1`] = `
+<input
+  class="sc-bdnylx jFCUOZ query invalid-false"
+  placeholder="Query JSONPath..."
+  type="text"
+  value=""
+/>
+`;

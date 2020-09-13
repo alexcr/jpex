@@ -8,7 +8,7 @@ import jsonpath from 'jsonpath';
 // It stringifies each property recursively until the resulting
 // string reaches a minimum number of characters or the whole
 // object is stringified (whichever happens first).
-function limitedStringify(json, minChars = Infinity) {
+function limitedStringify(json, minChars) {
   const props = [];
   let countChars = 2; // start with '{ ' or '[ '
 

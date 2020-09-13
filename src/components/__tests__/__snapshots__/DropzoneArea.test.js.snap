@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DropzoneArea should render a dropzone area correctly 1`] = `
+<div
+  class="sc-bdnylx icGOsa"
+  tabindex="0"
+>
+  <input
+    accept="application/json"
+    autocomplete="off"
+    style="display:none"
+    tabindex="-1"
+    type="file"
+  />
+  <div>
+    Test Child
+  </div>
+</div>
+`;

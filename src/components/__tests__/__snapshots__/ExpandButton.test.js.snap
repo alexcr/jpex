@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ExpandButton should render the collapse array button correctly 1`] = `
+<styled.div>
+  [-]
+</styled.div>
+`;
+
+exports[`ExpandButton should render the collapse object button correctly 1`] = `
+<styled.div>
+  {-}
+</styled.div>
+`;
+
+exports[`ExpandButton should render the expand array button correctly 1`] = `
+<styled.div>
+  [+]
+</styled.div>
+`;
+
+exports[`ExpandButton should render the expand object button correctly 1`] = `
+<styled.div>
+  {+}
+</styled.div>
+`;
